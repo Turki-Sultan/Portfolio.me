@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dr Turki Sultan</title>
+</head>
+<body>
+   
+    <div class="navbar navbar-expand-md bg-dark navbar-dark text-white fixed-top">
+        <div class="container">
+        <!--  -->
+            <h3 class="logo"  data-text="TURKI SULTAN">TURKI SULTAN</h3>
+            <button 
+            class="navbar-toggler" 
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mune"
+            >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="mune" >
+
+              <ul class="nav nav-pills ms-auto home" id="pills-tab" role="tablist">
+                <li class="mode" id="mode"><img onclick="func()"  src="./icon/day-and-night.png" alt="ss" ></li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                </li>
+
+
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Skills</button>
+                </li>
+                
+                
+                  
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">About me</button>
+                    </li>
+                    
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-tab" data-bs-toggle="pill" data-bs-target="#pills" type="button" role="tab" aria-controls="pills" aria-selected="false">Portfolio</button>
+                    </li>
+
+                   
+                  </ul>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+         <!-- start -->
+      <div class="tab-content" id="pills-tabContent">
+        <!-- 1 -->
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+        <section id="hero" class=" text-sm-start expand-md text-center hero" >
+          <div class="container " id="home">
+            <div class="d-lg-flex align-items-center justify-content-center">
+              <img class="img-fluid w-50 d-none d-lg-block  " src="./pto/back.png" alt="hero1" id="img">
+                <div class="lead">
+                   
+                    <p  id="lead"> 
+                        <p class="ti" >التصميم هو <span class="pan">حياتي</span></p>
+                        الجرافيك وتصميم الويب وتصميم و تطوير الالعاب أكثر بكثير من مجرد وظيفة بالنسبة لي. بفضل معرفتي التقنية الواسعة ، يمكنني تنفيذ أفكاري الإبداعية بشكل جيد للغاية ، <span class="an">حتى أتمكن من تقديم حلول مصممة خصيصًا للعملاء</span></p>
+                        
+                        <img class="img-fluid w-100 d-lg-none d-sm-block  " src="./pto/tack.png" alt="hero1" id="img">
+                       
+                         <div class="call" id="call">  <!-- Facebook -->
+                         <!--  <a class="btn d-none d-lg-block"   href="https://www.facebook.com/104618568615730/posts/114764694267784/?app=fbl" role="button"
+                          ><i class="fab fa-facebook-f"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg> <p class="call-me">&nbsp; Facebook</p></i
+                        ></a> -->
+                  
+                       
+                  
+                        <!--  -->
+                        <a class="btn " href="http://wa.me/+201153469912" role="button"
+                          ><i class="fab fa-google"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg><p class="call-me">&nbsp; whatsapp</p></i
+                        ></a>
+                  
+                        
+                        <a class="btn " href="tel:01153469912" role="button"
+                          ><i class="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg><p class="call-me">&nbsp; phone</p></i
+                        ></a>
+                  
+                        
+                     <a class="btn  " href="https://turki-sultan.github.io/turkisultan/" role="button"
+                          ><i class="fab fa-linkedin-in "><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                          </svg><p class="call-me">&nbsp; my site</p></i
+                        ></a>
+                  
+                         </div>
+  
+                 
+                   
+                </div>
+               
+               
+                 
+            </div>
+          </div>
+         
+         
+             
+      
+      </section >
+  
+  
+      <section class="section2">
+          <div class="container">
+              <p class="anser">ماذا أفعل؟</p>
+              <div class="row ">
+                  <div class="col-sm-4">
+                    <div class="card" style="height: 90%;">
+                      <div class="card-body" id="card-body">
+                        <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M131.5 217.5L55.1 100.1c47.6-59.2 119-91.8 192-92.1 42.3-.3 85.5 10.5 124.8 33.2 43.4 25.2 76.4 61.4 97.4 103L264 133.4c-58.1-3.4-113.4 29.3-132.5 84.1zm32.9 38.5c0 46.2 37.4 83.6 83.6 83.6s83.6-37.4 83.6-83.6-37.4-83.6-83.6-83.6-83.6 37.3-83.6 83.6zm314.9-89.2L339.6 174c37.9 44.3 38.5 108.2 6.6 157.2L234.1 503.6c46.5 2.5 94.4-7.7 137.8-32.9 107.4-62 150.9-192 107.4-303.9zM133.7 303.6L40.4 120.1C14.9 159.1 0 205.9 0 256c0 124 90.8 226.7 209.5 244.9l63.7-124.8c-57.6 10.8-113.2-20.8-139.5-72.5z"></path></svg><p class="me">تصميم المواقع</p></h5>
+                        <p class="card-text">أقوم بتصميم مواقع الويب التي تشمل العديد من الأجهزة وطرق التسليم وأنواع المحتوى. ليس فقط للمتصفحات ولكن لجميع تجارب المستخدم. مع مزيج من HTML و CSS و JavaScript ، بما في ذلك الصور والفيديو المتدفق أو الصوت والنص ، فأنا حتمًا أنجز المهمة</p>
+                   
+                      </div>
+                    </div>
+                  </div>
+  
+  
+                  <div class="col-sm-4">
+                    <div class="card" style="height: 90%;" >
+                      <div class="card-body" id="card-body2">
+                        <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z"></path></svg><p class="me">تصميم جرافيك</p></h5>
+                        <p class="card-text">أقوم بإنشاء مفاهيم بصرية باليد والكمبيوتر. أوصل أفكارًا لإلهام المستهلكين أو إعلامهم أو أسرهم. أنا أساعد في جعل منظمة يمكن التعرف عليها باستخدام مجموعة متنوعة من الوسائط لتوصيل فكرة أو هوية معينة لاستخدامها في الإعلان والترويج</p>
+                   
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card" style="height: 90%;">
+                      <div class="card-body" id="card-body3">
+                        <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M319.4 320.6L224 416l-95.4-95.4C57.1 323.7 0 382.2 0 454.4v9.6c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-9.6c0-72.2-57.1-130.7-128.6-133.8zM13.6 79.8l6.4 1.5v58.4c-7 4.2-12 11.5-12 20.3 0 8.4 4.6 15.4 11.1 19.7L3.5 242c-1.7 6.9 2.1 14 7.6 14h41.8c5.5 0 9.3-7.1 7.6-14l-15.6-62.3C51.4 175.4 56 168.4 56 160c0-8.8-5-16.1-12-20.3V87.1l66 15.9c-8.6 17.2-14 36.4-14 57 0 70.7 57.3 128 128 128s128-57.3 128-128c0-20.6-5.3-39.8-14-57l96.3-23.2c18.2-4.4 18.2-27.1 0-31.5l-190.4-46c-13-3.1-26.7-3.1-39.7 0L13.6 48.2c-18.1 4.4-18.1 27.2 0 31.6z"></path></svg><p class="me">مرشد</p></h5>
+                        <p class="card-text">أشارك معرفتي من خلال دورات عبر الإنترنت باللغتين الإنجليزية والعربية. أنا ماهر في التواصل مع الطلاب ، ويمكنني شرح عمليات صنع القرار وراء العمل الرائع وكيفية اتخاذ خيارات جيدة. أقوم حاليًا بإرشاد جمهور كبير من المصممين الممارسين</p>
+                   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </section>
+      <footer></footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+      <footer class="footer text-center text-white" style="background-color: rgb(43, 40, 40);">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4 call-2" id="call-2">
+              <!-- Facebook -->
+              <a class="btn "   href="https://www.facebook.com/104618568615730" role="button"
+              ><i class="fab fa-facebook-f"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg> </i
+            ></a>
+      
+            <!-- Twitter
+            <a class="btn btn-outline-light btn-floating" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a> -->
+      
+            <!--  -->
+            <a class="btn " href="http://wa.me/+201153469912" role="button"
+              ><i class="fab fa-google"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></i
+            ></a>
+      
+            
+            <a class="btn " href="tel:01153469912" role="button"
+              ><i class="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg></i
+            ></a>
+      
+            
+            <a class="btn " href="https://turki-sultan.github.io/turkisultan/" role="button"
+              ><i class="fab fa-linkedin-in"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+              </svg></i
+            ></a>
+      
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" >
+            
+           turki sultan &copy; 2022 <br> <img width="90px" src="./LOGO/logo.png" alt="logo">
+          </div>
+          <!-- Copyright -->
+        </footer>   
+
+
+      </div>
+
+
+
+                  <!-- 222222222222222222222222222222222222222222222222222222222222 -->
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    
+
+
+
+
+<div class="container test">
+  <nav class="sm lg ">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Frontend web developer</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Backend web developer</button>
+      <button class="nav-link word" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">WordPress</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <!-- start -->
+    <div class="tab-pane fade show active tabs2" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <!-- baert1 -->
+     <br><div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="span">HTML / 5 &nbsp; 98%</span></div>
+        </div>
+       <!--  -->
+       <br><br><div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span class="span">css &nbsp; 95%</span></div>
+          </div>
+          
+        <br><br><div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span class="span">javascript&nbsp; 95%</span></div>
+          </div> 
+          
+        <br><br>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated  bg-success" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="span">API &nbsp;98%</span></div>
+              </div>
+          
+          
+        <br><br>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%"><span class="span">bootstrap &nbsp;99%</span></div>
+          </div> 
+          
+        <br><br>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated  bg-danger" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span class="span"> Sass&nbsp;95%</span></div>
+          </div>
+          
+        <br><br>
+          <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span class="span">jQuery&nbsp; 95%</span></div>
+          </div>
+    </div>
+
+        <!-- bart2 -->
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+      <br><br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"><span class="span">PHP / oop &nbsp; 90%</span></div>
+        </div>
+        
+        <br><br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span class="span">SQL&nbsp; 95%</span></div>
+        </div>
+         
+        
+        
+        <br><br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-danger" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="span">JSON&nbsp; 98%</span></div>
+            </div>
+           
+
+
+        <br><br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated  bg-body" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="span">Python&nbsp; 98%</span></div>
+            </div>
+           
+        
+      
+    </div>
+
+        <!-- bart3 -->
+
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+
+    <br><br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%"><span class="span"> WordPress Designer 98%</span></div>
+            </div>
+
+            <br><br>
+        <div class="progress">
+<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"><span class="span">WordPress Developer 95%</span></div>
+</div> 
+
+
+    </div>
+
+    <!-- end -->
+  </div>
+  
+</div>
+
+
+
+<footer class=" footer2 text-center text-white" >
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4 call-2" id="part">
+      <!-- Facebook -->
+      <a class="btn "   href="https://www.facebook.com/104618568615730" role="button"
+      ><i class="fab fa-facebook-f"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg> </i
+    ></a>
+
+    <!-- Twitter
+    <a class="btn btn-outline-light btn-floating" href="#!" role="button"
+      ><i class="fab fa-twitter"></i
+    ></a> -->
+
+    <!--  -->
+    <a class="btn " href="http://wa.me/+201153469912" role="button"
+      ><i class="fab fa-google"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></i
+    ></a>
+
+    
+    <a class="btn " href="tel:01153469912" role="button"
+      ><i class="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg></i
+    ></a>
+
+    
+    <a class="btn " href="https://turki-sultan.github.io/turkisultan/" role="button"
+      ><i class="fab fa-linkedin-in"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+      </svg></i
+    ></a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" >
+    
+   turki sultan &copy; 2022 <br> <img width="90px" src="./LOGO/logo.png" alt="logo">
+  </div>
+  <!-- Copyright -->
+</footer>   
+
+    
+                  </div>
+
+
+
+      <!-- 3333333333333333333333333333333333333333333333333333333333333333333333333333 -->
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          
+
+          
+        <div class="container test">
+          <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+<!-- Footer Links -->
+<div class="container text-center text-md-left">
+
+<!-- Grid row -->
+<div class="row">
+
+  <!-- Grid column -->
+  <div class="col-md-5  mr-auto my-md-4 my-0 mt-4 mb-1">
+
+    <!-- Content -->
+    <h5 class=" text-uppercase mb-4">ABOUT My</h5>
+    <p id="part2">My interests lie in designing and branding new materials. I am a Graphic Designer and Art Director with more than 3 years of experience. I am specialised in Printing, Publishing and Packaging. Moreover, I am as well specialised in Front End Web Design, user experience and creating Identities. Throughout my career,  I have worked with companies of all shapes and sizes in which enriched my experience.</p>
+  
+
+  </div>
+  <!-- Grid column -->
+
+ 
+
+ 
+  <!-- Grid column -->
+
+  <hr class="clearfix w-100 d-md-none">
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+    <!-- Contact details -->
+    <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+    <ul class="list-unstyled" id="part3">
+      <li>
+        <p class="van">
+          <i class="fas fa-home mr-3"></i> Egypt &nbsp;  Luxor</p>
+      </li>
+      <li>
+        <p class="van">
+          <i class="fas fa-envelope mr-3"></i> turkisultan132@gmail.com</p>
+      </li>
+      <li>
+        <p class="van">
+          <i class="fas fa-phone mr-3"></i> +0201153469912</p>
+      </li>
+      <li>
+        <p class="van">
+          <i class="fas fa-print mr-3"></i> +0201207966887</p>
+      </li>
+    </ul>
+
+  </div>
+  <!-- Grid column -->
+
+  <hr class="clearfix w-100 d-md-none">
+
+  <!-- Grid column -->
+  <div class="col-md-4 col-lg-2 text-center mx-auto my-4">
+
+    <!-- Social buttons -->
+    <h5 class="font-weight-bold text-uppercase mb-4" id="part4">Follow My</h5>
+
+    <!-- Facebook -->
+    <a type="button" class="btn-floating btn-fb" id="btn-floating1"   href="https://www.facebook.com/104618568615730">
+      <i class="fab fa-facebook-f"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"></path></svg></i>
+    </a>
+    <!-- Twitter -->
+    <a type="button" class="btn-floating btn-tw" id="btn-floating2" href="http://wa.me/+201153469912">
+      <i class="fab fa-twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></i>
+    </a>
+    <!-- Google +-->
+    <a type="button" class="btn-floating btn-gplus" id="btn-floating3" href="tel:01153469912">
+      <i class="fab fa-google-plus-g" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"/></svg></i>
+    </a>
+    <!-- Dribbble -->
+    <a type="button" class="btn-floating btn-dribbble" id="btn-floating4" href="https://turki-sultan.github.io/turkisultan/" >
+      <i class="fab fa-dribbble"><svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+      </svg></i>
+    </a>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+<br><br>
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">
+<p>Turki sultan &COPY; 2022 <br> <img width="90px" src="./LOGO/logo.png" alt="logo"></p>
+
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+      <!-- port -->
+      <div class="tab-pane fade" id="pills" role="tabpanel" aria-labelledby="pills-tab">
+          
+
+  
+
+        <section class="section2 section_port">
+          <div class="container">
+            
+              <div class="row ">
+
+
+               
+                  
+
+                  
+                         <!--  -->
+                         <div class="col-sm-4">
+                          <div class="card" style="height: 90%;" >
+                            <a> <img class="TESHERT gg k" src="./JR/C.jpg" alt="TESHERT"></a>
+                               
+                          </div>
+                          </div>
+
+                            <div class="col-sm-4">
+                              <div class="card" style="height: 90%;" >
+                                <a> <img class="TESHERT gg k" src="./JR/A.jpg" alt="TESHERT"></a>
+                                   
+                              </div>
+                              </div>
+
+                              <div class="col-sm-4">
+                                <div class="card" style="height: 90%;" >
+                                  <a> <img class="TESHERT gg k" src="./JR/B.jpg" alt="TESHERT"></a>
+                                     
+                                </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                  <div class="card" style="height: 90%;" >
+                                    <a> <img class="TESHERT gg k" src="./JR/E.jpg" alt="TESHERT"></a>
+                                       
+                                  </div>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                    <div class="card" style="height: 90%;" >
+                                      <a> <img class="TESHERT gg k" src="./JR/G.jpg" alt="TESHERT"></a>
+                                         
+                                    </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                      <div class="card" style="height: 90%;" >
+                                        <a> <img class="TESHERT gg k" src="./JR/D.jpg" alt="TESHERT"></a>
+                                           
+                                      </div>
+                                      </div>
+
+
+                                      
+                    <div class="col-sm-4">
+                      <div class="card" style="height: 90%;" >
+                        <a href="./pages/teshert.html"><img class="TESHERT gg  k" src="./TESHERT/TESHERT4.png" alt="TESHERT"></a>
+                            <div class="footer c_foo"><a href="./pages/teshert.html"> + 3</a></div>
+                            
+                      </div>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <div class="card" style="height: 90%;" >
+                          <a href="./pages/mounten.html"> <img class="TESHERT gg k" src="./TESHERT/mounten.jpg" alt="TESHERT"></a>
+                              <div class="footer c_foo"><a href="./pages/mounten.html"> + 3</a></div>
+                        </div>
+                        </div>
+
+
+                                    <div class="col-sm-4">
+                                      <div class="card" style="height: 90%;" >
+                                        <a> <img class="TESHERT gg k" src="./JR/F.jpg" alt="TESHERT"></a>
+                                           
+                                      </div>
+                                      </div>
+                        <!--  -->
+
+                        <div class="col-sm-4">
+                          <div class="card" style="height: 90%;" >
+                                <img class="TESHERT gg  k" src="./TESHERT/a2.jpg" alt="TESHERT">
+                                
+                          </div>
+                          </div>
+                     
+
+                         
+                        
+                            <div class="col-sm-4">
+                              <div class="card" style="height: 90%;" >   
+                                     <p class="anser">بعض الاعمال تندرج تحت ملكية حقوق العملاء</p>
+                              </div>
+                              </div>
+
+                  </div>
+
+
+
+
+                  
+
+
+
+
+                </div>
+          </div>
+
+
+          
+      </section>
+
+
+
+
+      </div>
+
+
+
+      <!-- enddddddddddddddddddddddddddddddddddddddddddddd -->
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
